@@ -76,7 +76,7 @@ Before running, make sure you have installed:
 
 ##  How to Run
 
-### 1️ Clone / download the project
+### 1️. Clone / download the project
 If you have a ZIP
 ```bash
 unzip news-scraper.zip
@@ -89,7 +89,7 @@ git clone https://github.com/saeemwadkar/news-scraper.git
 cd news-scraper
 ```
 
-### 2 Backend setup
+### 2. Backend setup
 ```bash
 cd server
 node index.js
@@ -123,7 +123,7 @@ Example response:
 }
 ```
 
-### 3 Frontend Setup
+### 3. Frontend Setup
 
 ```bash
 cd ../client
@@ -135,7 +135,7 @@ Frontend will start at:
 http://localhost:5173
 ```
 
-### 4 Google 0Auth Setup
+### 4. Google 0Auth Setup
 1. Go to Google Cloud Console → Create a new project
 2. Enable OAuth 2.0 Client ID → Web Application
 3. Add http://localhost:5173 as an Authorized JavaScript origin
