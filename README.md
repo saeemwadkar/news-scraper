@@ -1,11 +1,11 @@
-# 📰 News Scraper  
+#  News Scraper  
 
 A **full-stack news aggregator** built with **React + TailwindCSS (frontend)** and **Node.js + Express + Cheerio (backend)**.  
 It allows users to **log in with Google**, view their **profile info**, and browse the **latest headlines** scraped from multiple trusted RSS feeds like **BBC, CNN, Google News, and The Guardian**.  
 
 ---
 
-## 🚀 Features  
+## Features  
 
 ✅ **Google Login** using Google Identity Services  
 ✅ **JWT Decoding** → Get user name, email & profile picture  
@@ -17,7 +17,7 @@ It allows users to **log in with Google**, view their **profile info**, and brow
 
 ---
 
-## 🛠️ Tech Stack  
+##  Tech Stack  
 
 ### **Frontend**  
 - React.js (Vite)  
