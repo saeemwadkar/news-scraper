@@ -58,7 +58,7 @@ news-scraper/
  ├── backend (server)/          # Node.js + Express backend
  │   ├── server.js              # Express API + RSS scraper
  │   └── package.json           # Backend dependencies
- │
+ │   └── index.js               # Index page
  └── README.md                  # Documentation
 ```
 
@@ -91,9 +91,8 @@ cd news-scraper
 
 ### 2 Backend setup
 ```bash
-cd backend
-npm install
-npm start
+cd server
+node index.js
 ```
 Backend will start at:
 ```arduino
@@ -127,7 +126,7 @@ Example response:
 ### 3 Frontend Setup
 
 ```bash
-cd ../frontend
+cd ../client
 npm install
 npm run dev
 ```
@@ -143,7 +142,7 @@ http://localhost:5173
 4. Copy your Client ID
 5. Open:
 ```bash
-frontend/src/components/Login.jsx
+client/src/components/Login.jsx
 ```
 6. Replace this line:
 ```javascrpt
