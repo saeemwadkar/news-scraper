@@ -71,18 +71,64 @@ Before running, make sure you have installed:
 
 ---
 
-##  Quick Setup in Short  
+##  How to Run
 
+### 1️ Clone / download the project
+If you have a ZIP
+```bash
+unzip news-scraper.zip
+cd news-scraper
+```
+
+Or clone from GitHub:
 ```bash
 git clone https://github.com/saeemwadkar/news-scraper.git
+cd news-scraper
+```
 
-# Run Backend
-cd news-scraper/server
+### 2 Backend setup
+```bash
+cd backend
 npm install
-npm start  # Runs at http://localhost:5000
+npm start
+```
+Backend will start at:
+```arduino
+http://localhost:5000
+```
+Available API routes:
 
-# Run Frontend
-cd ..
-cd news-scraper/client
+/ → Welcome page
+
+/api/scrape → Returns latest headlines as JSON
+
+Example response:
+
+```json
+{
+  "headlines": [
+    {
+      "title": "Breaking News Example",
+      "link": "https://www.bbc.co.uk/news/article",
+      "source": "https://feeds.bbci.co.uk/news/rss.xml"
+    },
+    {
+      "title": "Another Headline",
+      "link": "https://www.cnn.com/article",
+      "source": "http://rss.cnn.com/rss/edition.rss"
+    }
+  ]
+}
+```
+
+### 3 Frontend Setup
+
+```bash
+cd ../frontend
 npm install
-npm run dev  # Runs at http://localhost:5173
+npm run dev
+```
+Frontend will start at:
+```arduino
+http://localhost:5173
+```
