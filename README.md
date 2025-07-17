@@ -7,13 +7,13 @@ It allows users to **log in with Google**, view their **profile info**, and brow
 
 ## Features  
 
-✅ **Google Login** using Google Identity Services  
-✅ **JWT Decoding** → Get user name, email & profile picture  
-✅ **Responsive Navbar** with user info + Logout  
-✅ **Latest Headlines** aggregated from multiple sources  
-✅ **Refresh button** to fetch new random headlines  
-✅ **Express.js API** → Scrapes & merges RSS feeds  
-✅ **CORS enabled** for seamless frontend-backend integration  
+- **Google Login** using Google Identity Services  
+- **JWT Decoding** → Get user name, email & profile picture  
+- **Responsive Navbar** with user info + Logout  
+- **Latest Headlines** aggregated from multiple sources  
+- **Refresh button** to fetch new random headlines  
+- **Express.js API** → Scrapes & merges RSS feeds  
+- **CORS enabled** for seamless frontend-backend integration  
 
 ---
 
@@ -61,7 +61,7 @@ It allows users to **log in with Google**, view their **profile info**, and brow
 
 ---
 
-## ✅ Prerequisites  
+##  Prerequisites  
 
 Before running, make sure you have installed:  
 
@@ -71,14 +71,18 @@ Before running, make sure you have installed:
 
 ---
 
-## ⚙️ Setup Guide  
-
-Follow these steps to run the project **locally**:  
-
----
-
-### 1️ Clone the repository  
+##  Quick Setup in Short  
 
 ```bash
 git clone https://github.com/saeemwadkar/news-scraper.git
-cd news-scraper
+
+# Run Backend
+cd news-scraper/server
+npm install
+npm start  # Runs at http://localhost:5000
+
+# Run Frontend
+cd ..
+cd news-scraper/client
+npm install
+npm run dev  # Runs at http://localhost:5173
