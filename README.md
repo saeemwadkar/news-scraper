@@ -41,5 +41,44 @@ It allows users to **log in with Google**, view their **profile info**, and brow
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
+📦 news-scraper
+┣ 📂 client (frontend)
+┃ ┣ 📂 src
+┃ ┃ ┣ 📂 components
+┃ ┃ ┃ ┣ Login.jsx # Google OAuth login
+┃ ┃ ┃ ┣ Navbar.jsx # Shows logged-in user info
+┃ ┃ ┃ ┗ Headlines.jsx # Displays fetched headlines
+┃ ┃ ┣ App.jsx # Manages login state
+┃ ┃ ┗ main.jsx
+┃ ┣ tailwind.config.js
+┃ ┗ package.json
+┣ 📂 server (backend)
+┃ ┣ server.js # Express API + RSS scraper
+┃ ┣ package.json
+┗ README.md
 
+
+---
+
+## ✅ Prerequisites  
+
+Before running, make sure you have installed:  
+
+- [Node.js (v16+)](https://nodejs.org/)  
+- npm (comes with Node.js)  
+- A **Google Cloud account** for OAuth credentials  
+
+---
+
+## ⚙️ Setup Guide  
+
+Follow these steps to run the project **locally**:  
+
+---
+
+### 1️ Clone the repository  
+
+```bash
+git clone https://github.com/saeemwadkar/news-scraper.git
+cd news-scraper
